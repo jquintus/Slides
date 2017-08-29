@@ -68,6 +68,9 @@ string FindSolutionFile()
     return slnFile.ToString();
 }
 ```
+
+---
+
 #### Arguments
 
 ---
