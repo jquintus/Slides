@@ -17,14 +17,36 @@ Unlike make, the Cake script is written in C#.
 
 #### Tasks
 
+The main building block of Cake are tasks.  Below is a simple task named `Hello_World` that prints out a friendly message.
 
--- 
+```csharp
+Task("Hello_World")
+    .Does(() =>
+{
+    Information("Hello World");
+});
+```
+
+---
+
+#### Task Dependencies
+
+
+
+---
 
 #### Arguments
 
 ---
 
 #### Installing
+
+1. Download the [cake bootstrapper](https://raw.githubusercontent.com/cake-build/resources/master/build.ps1) in the root folder of your project
+2. Create a simple cake script and save it as `build.cake` in the same directory
+3. Running the cake script the first time will automatically download any additional tools you'll need
+
+
+
 
 ---
 
@@ -46,6 +68,9 @@ Compiling build script...
 ---
 
 #### Links
+
+<br/>
+<br/>
 
 * [Official Site](http://cakebuild.net/)
 * [Addins](https://cakebuild.net/addins/)
