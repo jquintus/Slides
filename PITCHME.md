@@ -5,9 +5,7 @@
 
 ---
 
-#### What is Cake?
-
-**make for C#**
+#### make for C&#35;
 
 Like *make*, you can define the build processas a series of dependent tasks.  To run the Cake script, you specify which task to run and Cake will run it, ensuring any dependent tasks are run first.
 
@@ -17,7 +15,12 @@ Unlike make, the Cake script is written in C#.
 
 #### Tasks
 
+<br/>
+
+
 The main building block of Cake are tasks.  Below is a simple task named `Hello_World` that prints out a friendly message.
+
+<br/>
 
 ```csharp
 Task("Hello_World")
