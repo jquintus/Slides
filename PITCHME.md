@@ -13,14 +13,34 @@ Unlike make, the Cake script is written in C#.
 
 --- 
 
+#### Installing
+
+1. Download the [cake bootstrapper](https://raw.githubusercontent.com/cake-build/resources/master/build.ps1) in the root folder of your project
+2. Create a simple cake script and save it as `build.cake` in the same directory
+3. Running the cake script the first time will automatically download any additional tools you'll need
+
+---
+
+#### Running 
+
+Running your Cake script is as easy running the powershell bootstrapper
+
+```
+> powershell ./cake.ps1
+Preparing to run build script...
+Running build script...
+Analyzing build script...
+Processing build script...
+Installing addins...
+Compiling build script...
+...
+```
+
+---
+
 #### Tasks
 
-<br/>
-
-
-The main building block of Cake are tasks.  Below is a simple task named `Hello_World` that prints out a friendly message.
-
-<br/>
+Hello world
 
 ```csharp
 Task("Hello_World")
@@ -32,6 +52,17 @@ Task("Hello_World")
 
 ---
 
+#### The Running Entry Point Task
+
+```csharp
+var target = Argument("target", "Default");
+
+//...
+
+RunTarget(target);
+```
+
+---
 #### Task Dependencies
 
 Running `Build` will  run both the `Clean` and `Restore`
@@ -76,29 +107,14 @@ string FindSolutionFile()
 
 #### Arguments
 
----
-
-#### Installing
-
-1. Download the [cake bootstrapper](https://raw.githubusercontent.com/cake-build/resources/master/build.ps1) in the root folder of your project
-2. Create a simple cake script and save it as `build.cake` in the same directory
-3. Running the cake script the first time will automatically download any additional tools you'll need
-
----
-
-#### Running 
-
-Running your Cake script is as easy running the powershell bootstrapper
+You can pass in optional [arguments](https://cakebuild.net/docs/fundamentals/args-and-environment-vars) from the command line
 
 ```
-> powershell ./cake.ps1
-Preparing to run build script...
-Running build script...
-Analyzing build script...
-Processing build script...
-Installing addins...
-Compiling build script...
-...
+powershell ./build.ps1 -ScriptArgs '-config="Debug"'
+```
+
+```csharp
+var config = Argument("config", "Release");
 ```
 
 ---
