@@ -1,5 +1,5 @@
-This is a simple test of GitPitch.
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/Cake?grs=github&t=white)
 
-[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/Test?grs=github&t=white)
+Background on what Cake is and how to use it.
 
-To view this slideshow, go to https://gitpitch.com/jquintus/Slides/Test
+View the [`raw` **PITCHME.md**](https://raw.githubusercontent.com/jquintus/Slides/Cake/PITCHME.md) markdown to see how each slide in the presentation has been implemented.
