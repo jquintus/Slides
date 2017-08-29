@@ -41,12 +41,10 @@ Task("Build")
 {
     DotNetCoreMSBuild(slnFile, buildSettings));
 });
-Task("Clean")
-    .Does(() => {
+Task("Clean").Does(() => {
     DotNetCoreClean(slnFile);
 });
-Task("Restore")
-    .Does(() =>{
+Task("Restore").Does(() =>{
     DotNetCoreRestore(slnFile);
 });
 ```
