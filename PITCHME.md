@@ -31,8 +31,30 @@ Task("Hello_World")
 
 #### Task Dependencies
 
+To indicate one task needs to run before another, just add it as a dependency.  In the following example trying to run the `Build` will automatically run both the `Clean` and `Restore` tasks.
 
+```csharp
+Task("Build")
+    .IsDependentOn("Clean")
+    .IsDependentOn("Restore")
+    .Does(() =>
+{
+    DotNetCoreMSBuild(slnFile, buildSettings);
+});
 
+Task("Clean")
+    .Does(() => 
+{
+    DotNetCoreClean(slnFile);
+});
+
+Task("Restore")
+    .IsDependentOn("Clean")
+    .Does(() =>
+{
+    DotNetCoreRestore(slnFile);
+});
+```
 ---
 
 #### Arguments
@@ -44,9 +66,6 @@ Task("Hello_World")
 1. Download the [cake bootstrapper](https://raw.githubusercontent.com/cake-build/resources/master/build.ps1) in the root folder of your project
 2. Create a simple cake script and save it as `build.cake` in the same directory
 3. Running the cake script the first time will automatically download any additional tools you'll need
-
-
-
 
 ---
 
