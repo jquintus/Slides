@@ -50,7 +50,7 @@ Task("Restore").Does(() =>{
 ```
 ---
 
-#### It's just C#
+#### It's just C&#35;
 
 You can call methods from your tasks
 
