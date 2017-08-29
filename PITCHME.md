@@ -31,7 +31,7 @@ Task("Hello_World")
 
 #### Task Dependencies
 
-To indicate one task needs to run before another, just add it as a dependency.  In the following example trying to run the `Build` will automatically run both the `Clean` and `Restore` tasks.
+Running `Build` will  run both the `Clean` and `Restore`
 
 ```csharp
 Task("Build")
