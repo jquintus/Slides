@@ -50,6 +50,24 @@ Task("Restore").Does(() =>{
 ```
 ---
 
+#### It's just C#
+
+You can call methods from your tasks
+
+```csharp
+Task("Build")
+    .Does(() =>
+{
+    var slnFile = FindSlnFile();
+    DotNetCoreMSBuild(slnFile, buildSettings));
+});
+
+string FindSolutionFile()
+{
+    var slnFile = GetFiles("*.sln").FirstOrDefault();
+    return slnFile.ToString();
+}
+```
 #### Arguments
 
 ---
