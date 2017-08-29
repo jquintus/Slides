@@ -39,19 +39,14 @@ Task("Build")
     .IsDependentOn("Restore")
     .Does(() =>
 {
-    DotNetCoreMSBuild(slnFile, buildSettings);
+    DotNetCoreMSBuild(slnFile, buildSettings));
 });
-
 Task("Clean")
-    .Does(() => 
-{
+    .Does(() => {
     DotNetCoreClean(slnFile);
 });
-
 Task("Restore")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
+    .Does(() =>{
     DotNetCoreRestore(slnFile);
 });
 ```
