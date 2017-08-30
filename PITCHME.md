@@ -273,3 +273,4 @@ Debugging Cake is possible from within
 * [Cake on GitHub](https://github.com/cake-build/cake)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Cake extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode)
+* [This presentation](https://github.com/jquintus/Slides/tree/Cake)
