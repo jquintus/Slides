@@ -214,19 +214,22 @@ You can reference external Cake scripts with `#load`
 
 Debugging Cake is possible from within [Visual Studio Code](https://code.visualstudio.com/)
 
-What?
-
 * Breakpoints
 * Variable inspection
 
-How?
+---
 
-* [Set Up Blog](https://cakebuild.net/blog/2016/09/debug-cake-vscode)
-* [Set up Video](https://www.youtube.com/watch?time_continue=486&v=zzZuysl3xSg) 
+#### Setting Up Debugging Cake
+
+* Download the [Cake extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode)
+* Follow the steps in the [set up blog](https://cakebuild.net/blog/2016/09/debug-cake-vscode) or [set up video](https://www.youtube.com/watch?time_continue=486&v=zzZuysl3xSg) 
+* Press `<F5>`
 
 ---
-#### Links
+#### Useful Links Links
 
-* [Official Site](http://cakebuild.net/)
-* [Addins](https://cakebuild.net/addins/)
+* [Official Cake Site](http://cakebuild.net/)
+* [Cake Addins](https://cakebuild.net/addins/)
 * [Cake on GitHub](https://github.com/cake-build/cake)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Cake extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode)
