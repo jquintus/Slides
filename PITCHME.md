@@ -244,6 +244,7 @@ You can reference external Cake scripts with `#load`
 #### Debugging Cake
 
 Debugging Cake is possible from within 
+
 [Visual Studio Code](https://code.visualstudio.com/)
 
 <br/>
