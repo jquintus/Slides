@@ -250,6 +250,7 @@ Debugging Cake is possible from within
 <br/>
 
 * Breakpoints
+* Step in to code
 * Variable inspection
 
 ---
