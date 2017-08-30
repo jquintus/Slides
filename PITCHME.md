@@ -35,17 +35,22 @@ Cake scripts can be run locally and on the build server. This allows for:
 
 #### What Can You Do With It?
 
-1. Clean the directory
-1. Restore packages (NuGet/Npm/etc.)
-1. Update the build number
-1. Build a solution (or project)
-1. Run unit tests
-1. Sign the build
-1. Package the build (Wix/NuGet/Npm/etc.)
-1. Publish artifacts to the build server (or locally)
-1. Publish NuGet packages 
-1. Publish a website
-1. Anything you can do in C#
+* Clean the directory
+* Restore packages (NuGet/Npm/etc.)
+* Update the build number
+* Build a solution (or project)
+* Run unit tests
+
+--- 
+
+#### What Can You Do With It? (cont.)
+
+* Sign the build
+* Package the build (Wix/NuGet/Npm/etc.)
+* Publish artifacts to the build server (or locally)
+* Publish NuGet packages 
+* Publish a website
+* Anything you can do in C#
 
 --- 
 
