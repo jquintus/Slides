@@ -184,9 +184,9 @@ string FindSolutionFile()
 
 #### Arguments
 
-<br/>
-
 You can pass in optional [arguments](https://cakebuild.net/docs/fundamentals/args-and-environment-vars) from the command line
+
+<br/>
 
 ```
 powershell ./build.ps1 -ScriptArgs '-config="Debug"'
