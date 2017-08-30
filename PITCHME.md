@@ -169,7 +169,7 @@ You can call methods from your tasks
 Task("Build")
     .Does(() =>
 {
-    var slnFile = FindSlnFile();
+    var slnFile = FindSolutionFile();
     DotNetCoreMSBuild(slnFile));
 });
 
