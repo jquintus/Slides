@@ -1,2 +1,3 @@
 theme : white
-vertical-center : false
+mousewheel : true
+
