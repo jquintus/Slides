@@ -7,7 +7,11 @@
 
 #### make for C&#35;
 
+<br/>
+
 Like *make*, you can define the build processas a series of dependent tasks.  To run the Cake script, you specify which task to run and Cake will run it, ensuring any dependent tasks are run first.
+
+<br/>
 
 Unlike make, the Cake script is written in C#.
 
@@ -17,6 +21,8 @@ Unlike make, the Cake script is written in C#.
 
 Cake scripts can be run locally and on the build server. This allows for:
 
+<br/>
+
 * Consitency across local and server environments
 * Easier testing of build scripts
 * Easier creation of new scripts - it's just C#
@@ -24,6 +30,8 @@ Cake scripts can be run locally and on the build server. This allows for:
 
 ---
 #### What About The Build Server? (cont.)
+
+<br/>
 
 * ...
 * Share scripts across projects
@@ -35,6 +43,8 @@ Cake scripts can be run locally and on the build server. This allows for:
 
 #### What Can You Do With It?
 
+<br/>
+
 * Clean the directory
 * Restore packages (NuGet/Npm/etc.)
 * Update the build number
@@ -44,6 +54,8 @@ Cake scripts can be run locally and on the build server. This allows for:
 --- 
 
 #### What Can You Do With It? (cont.)
+
+<br/>
 
 * Sign the build
 * Package the build (Wix/NuGet/Npm/etc.)
@@ -56,6 +68,8 @@ Cake scripts can be run locally and on the build server. This allows for:
 
 #### Installing
 
+<br/>
+
 1. Download the [cake bootstrapper](https://raw.githubusercontent.com/cake-build/resources/master/build.ps1) in the root folder of your project
 2. Create a simple cake script and save it as `build.cake` in the same directory
 3. Running the cake script the first time will automatically download any additional tools you'll need
@@ -65,6 +79,8 @@ Cake scripts can be run locally and on the build server. This allows for:
 #### Running 
 
 Running your Cake script is as easy running the powershell bootstrapper
+
+<br/>
 
 ```
 > powershell ./cake.ps1
@@ -81,7 +97,7 @@ Compiling build script...
 
 #### Tasks
 
-Hello world
+<br/>
 
 ```csharp
 Task("Hello_World")
@@ -95,6 +111,8 @@ Task("Hello_World")
 
 #### Running The Entry Point Task
 
+<br/>
+
 ```csharp
 var target = Argument("target", "Default");
 
@@ -105,8 +123,6 @@ RunTarget(target);
 
 ---
 #### Task Dependencies
-
-Running `Build` will run both `Clean` and `Restore`
 
 ```csharp
 Task("Build")
@@ -123,9 +139,14 @@ Task("Restore").Does(() =>{
     DotNetCoreRestore(slnFile);
 });
 ```
+
+Running `Build` will run both `Clean` and `Restore`
+
 ---
 
 #### Conditional Tasks
+
+<br/>
 
 ```csharp
 Task("Publish")
@@ -141,6 +162,8 @@ Task("Publish")
 #### It's just C&#35;
 
 You can call methods from your tasks
+
+<br/>
 
 ```csharp
 Task("Build")
@@ -161,6 +184,8 @@ string FindSolutionFile()
 
 #### Arguments
 
+<br/>
+
 You can pass in optional [arguments](https://cakebuild.net/docs/fundamentals/args-and-environment-vars) from the command line
 
 ```
@@ -177,6 +202,8 @@ var config = Argument("config", "Release");
 
 Addins allow you to leverage 3rd party libaries
 
+<br/>
+
 * Git
 * KeePass
 * Azure/AWS
@@ -188,6 +215,8 @@ Addins allow you to leverage 3rd party libaries
 ---
 
 #### Addins (cont.)
+
+<br/>
 
 ```
 #addin nuget:?package=Cake.Foo
@@ -202,6 +231,8 @@ Addins allow you to leverage 3rd party libaries
 
 You can reference external Cake scripts with `#load`
 
+<br/>
+
 ```
 #load "scripts/utilities.cake"
 #load "local:?path=scripts/utilities.cake"
@@ -212,7 +243,10 @@ You can reference external Cake scripts with `#load`
 
 #### Debugging Cake
 
-Debugging Cake is possible from within [Visual Studio Code](https://code.visualstudio.com/)
+Debugging Cake is possible from within 
+[Visual Studio Code](https://code.visualstudio.com/)
+
+<br/>
 
 * Breakpoints
 * Variable inspection
