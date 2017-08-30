@@ -20,9 +20,31 @@ Cake scripts can be run locally and on the build server. This allows for:
 * Consitency across local and server environments
 * Easier testing of build scripts
 * Easier creation of new scripts - it's just C#
+* ...
+
+---
+#### What About The Build Server? (cont.)
+
+* ...
 * Simplified build server configuration (just run the cake script)
 * Better history tracking since the script is checked in and managed by source control
 * Testing of changes to the build in isolation on a branch
+
+--- 
+
+#### What Can You Do With It?
+
+1. Clean the directory
+1. Restore packages (NuGet/Npm/etc.)
+1. Update the build number
+1. Build a solution (or project)
+1. Run unit tests
+1. Sign the build
+1. Package the build (Wix/NuGet/Npm/etc.)
+1. Publish artifacts to the build server (or locally)
+1. Publish NuGet packages 
+1. Publish a website
+1. Anything you can do in C#
 
 --- 
 
