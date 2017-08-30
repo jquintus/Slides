@@ -26,6 +26,7 @@ Cake scripts can be run locally and on the build server. This allows for:
 #### What About The Build Server? (cont.)
 
 * ...
+* Share scripts across projects
 * Simplified build server configuration (just run the cake script)
 * Better history tracking since the script is checked in and managed by source control
 * Testing of changes to the build in isolation on a branch
@@ -119,6 +120,19 @@ Task("Restore").Does(() =>{
 ```
 ---
 
+#### Conditional Tasks
+
+```csharp
+Task("Publish")
+    .WithCriteria(BuildSystem.IsRunningOnTeamCity)
+    .Does(() =>
+{
+    BuildSystem.TeamCity.PublishArtifacts(artifactsDir);
+});
+```
+
+---
+
 #### It's just C&#35;
 
 You can call methods from your tasks
@@ -154,6 +168,58 @@ var config = Argument("config", "Release");
 
 ---
 
+#### Addins
+
+Addins allow you to leverage 3rd party libaries
+
+* Git
+* KeePass
+* Azure/AWS
+* Entity Framework
+* Semantic Versioning
+* Docker
+* Slack
+
+---
+
+#### Addins (cont.)
+
+```
+#addin nuget:?package=Cake.Foo
+#addin nuget:?package=Cake.Foo&version=1.2.3
+#addin nuget:?package=Cake.Foo&prerelease
+#addin nuget:https://myget.org/f/Cake/?package=Cake.Foo&prerelease
+```
+
+---
+
+#### Scripts
+
+You can reference external Cake scripts with `#load`
+
+```
+#load "scripts/utilities.cake"
+#load "local:?path=scripts/utilities.cake"
+#load "nuget:?package=utilities.cake"
+```
+
+---
+
+#### Debugging Cake
+
+Debugging Cake is possible from within [Visual Studio Code](https://code.visualstudio.com/)
+
+What?
+
+* Breakpoints
+* Variable inspection
+
+How?
+
+* [Set Up Blog](https://cakebuild.net/blog/2016/09/debug-cake-vscode)
+* [Set up Video](https://www.youtube.com/watch?time_continue=486&v=zzZuysl3xSg) 
+
+---
 #### Links
 
 * [Official Site](http://cakebuild.net/)
