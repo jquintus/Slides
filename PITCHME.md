@@ -256,12 +256,16 @@ Debugging Cake is possible from within
 
 #### Setting Up Debugging Cake
 
+<br/>
+
 * Download the [Cake extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode)
 * Follow the steps in the [set up blog](https://cakebuild.net/blog/2016/09/debug-cake-vscode) or [set up video](https://www.youtube.com/watch?time_continue=486&v=zzZuysl3xSg) 
 * Press `<F5>`
 
 ---
 #### Useful Links Links
+
+<br/>
 
 * [Official Cake Site](http://cakebuild.net/)
 * [Cake Addins](https://cakebuild.net/addins/)
