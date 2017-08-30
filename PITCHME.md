@@ -13,6 +13,19 @@ Unlike make, the Cake script is written in C#.
 
 --- 
 
+#### What About The Build Server?
+
+Cake scripts can be run locally and on the build server. This allows for:
+
+* Consitency across local and server environments
+* Easier testing of build scripts
+* Easier creation of new scripts - it's just C#
+* Simplified build server configuration (just run the cake script)
+* Better history tracking since the script is checked in and managed by source control
+* Testing of changes to the build in isolation on a branch
+
+--- 
+
 #### Installing
 
 1. Download the [cake bootstrapper](https://raw.githubusercontent.com/cake-build/resources/master/build.ps1) in the root folder of your project
@@ -52,7 +65,7 @@ Task("Hello_World")
 
 ---
 
-#### The Running Entry Point Task
+#### Running The Entry Point Task
 
 ```csharp
 var target = Argument("target", "Default");
@@ -65,7 +78,7 @@ RunTarget(target);
 ---
 #### Task Dependencies
 
-Running `Build` will  run both the `Clean` and `Restore`
+Running `Build` will run both `Clean` and `Restore`
 
 ```csharp
 Task("Build")
@@ -93,7 +106,7 @@ Task("Build")
     .Does(() =>
 {
     var slnFile = FindSlnFile();
-    DotNetCoreMSBuild(slnFile, buildSettings));
+    DotNetCoreMSBuild(slnFile));
 });
 
 string FindSolutionFile()
@@ -120,9 +133,6 @@ var config = Argument("config", "Release");
 ---
 
 #### Links
-
-<br/>
-<br/>
 
 * [Official Site](http://cakebuild.net/)
 * [Addins](https://cakebuild.net/addins/)
