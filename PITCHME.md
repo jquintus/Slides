@@ -59,10 +59,10 @@ BoxStarter
 * clip
 * pushd
 
---- 
-
+---?image=./img/logo_github.png&size=auto
 #### Git
-![octocat](./img/logo_github.png)
+* aliases
+
 +++
 
 #### Setup
