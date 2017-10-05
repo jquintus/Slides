@@ -50,7 +50,9 @@ BoxStarter
 
 #### Startup Script
 
-+++ Minimal Commands
++++
+
+#### Minimal Commands
 
 * grep
 * dir
