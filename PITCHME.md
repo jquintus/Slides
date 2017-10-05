@@ -59,11 +59,15 @@ BoxStarter
 * clip
 * pushd
 
----?image=./img/logo_github.png&size=auto
+---
 #### Git
-* aliases
+
+![logo](./img/logo_github.png){:height="36px" width="36px"}.
+
 
 +++
+
+#### Aliases
 
 #### Setup
 
