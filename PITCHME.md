@@ -62,8 +62,7 @@ BoxStarter
 ---
 #### Git
 
-![logo](./img/logo_github.png)
-
+![logo](img/logo_github.png)
 
 +++
 
