@@ -60,6 +60,18 @@ BoxStarter
 * pushd
 
 ---
+
+#### Command Line @ DotAlign
+
++++
+
+#### db.bat
+
++++
+
+#### dalogs
+
+---
 #### Git
 
 ![logo](img/logo_github.png)
