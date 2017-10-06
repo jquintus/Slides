@@ -103,7 +103,11 @@ Better together
 
 #### Merging in from master
 
-```cmd
+
+
+
+
+```
 > dotlook
 Moved to c:\code\dotlook
 > s
@@ -123,3 +127,11 @@ Your branch is up-to-date with 'origin/Feature-Josh'.
 <a bunch of output again>
 > push
 ```
+
+@[1-2]
+@[3-6]
+@[7-10]
+@[11-12]
+@[13-15]
+@[16-17]
+@[18]
