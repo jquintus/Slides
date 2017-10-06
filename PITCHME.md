@@ -121,3 +121,5 @@ On branch Feature-Josh
 Your branch is up-to-date with 'origin/Feature-Josh'.
 > git merge master
 <a bunch of output again>
+> push
+```
