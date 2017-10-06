@@ -91,7 +91,12 @@ Better together
     * History of file
 * **Don'ts**
     * Merge a large solution (if you do, go get coffee) 
-* Command Line
+
++++
+
+#### Git from the Command Line
+
++++
 
 #### Aliases
 
@@ -99,7 +104,7 @@ Better together
 
 #### Work Flows
 
-+++ 
++++
 
 #### Merging in from master
 
