@@ -84,13 +84,13 @@ BoxStarter
 Better together
 
 * **Dos**
-  * Handles authentication so you don't have to type your password on the command line
-  * Useful for quick git tasks
-    * Commit
+  * Auth
+  * Quick tasks
+    * Commit/push
     * Blame
     * History of file
 * **Don'ts**
-    * Merge a large solution (if you do, go get coffee) 
+    * Merge a large solution (if you do, go get coffee)
 
 +++
 
