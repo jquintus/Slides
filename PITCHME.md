@@ -103,22 +103,18 @@ Better together
 
 #### Merging in from master
 
-
-
-
-
-```
+```cmd
 > dotlook
 Moved to c:\code\dotlook
 > s
 On branch Feature-Josh
 Your branch is up-to-date with 'origin/Feature-Josh'.
 nothing to commit, working tree clean
-> co master
+> master
 Switched to branch 'master'
 Your branch is behind 'origin/master' by 335 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
-> co pull
+> pull
 <a bunch of output>
 > co -
 On branch Feature-Josh
@@ -128,10 +124,10 @@ Your branch is up-to-date with 'origin/Feature-Josh'.
 > push
 ```
 
-@[1-2]
-@[3-6]
-@[7-10]
-@[11-12]
-@[13-15]
-@[16-17]
-@[18]
+@[1-2](Move in to your code directory)
+@[3-6](Check the status with a `git status`)
+@[7-10](Check out the master branch with a `git checkout master`)
+@[11-12](Pull down from the remote with a `git pull`)
+@[13-15](Go back to your previous branch with `git checkout -`)
+@[16-17](Merge in from master)
+@[18](Push your changes back to the remote with a `git push`)
