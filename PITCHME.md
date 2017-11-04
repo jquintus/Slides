@@ -73,7 +73,6 @@ type FruitOrder = {
 }
 
 let myOrder = { fruit = "apples"; price = 0.35; count = 2 }
-
 let calculateTotal order =
   let (cost = myCost; count = myCount) = order
   myCost * myCount
@@ -82,7 +81,7 @@ let calculateTotal order =
 @[1](Defining a record in one line)
 @[3-7](Defining a record on multiple lines (no more semicolons))
 @[9](Constructing a record)
-@[11-13](Passing a record into a function and deconstructing it)
+@[10-12](Passing a record into a function and deconstructing it)
 
 ---
 
