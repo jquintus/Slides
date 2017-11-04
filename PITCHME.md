@@ -4,12 +4,20 @@
 
 ---
 
-## Slide 2
+## Topics
 
-Content
+* What is F#
+* Syntax
+* Types
+* Currying
+* Awesome sauce
 
 ---
 
-## slide 3
+## What is F &#35;
 
 different content
+
+---
+
+## new slide
