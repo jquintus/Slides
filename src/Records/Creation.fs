@@ -7,8 +7,8 @@ type FruitOrderRecord = {
   count: int
 }
 
-let calculateTotal order =
+let calcTotal order =
   let { price = _; count = myCount } = order
   order.price * float(myCount)
 
-let total = calculateTotal { fruit = "apples"; price = 0.35; count = 2 }
+let total = calcTotal { fruit = "apples"; price = 0.35; count = 2 }
