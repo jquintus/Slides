@@ -29,20 +29,29 @@
 
 ## Types
 
-* Tupples
+* Tuples
 * Records
 * Discriminated Unions
 * Options
 * Units
 * Classes
 
++++?code=src/Tuples.fs&lang=FSharp
+
+@[1](Constructing a tuple)
+@[2](Deconstructing the tuple)
+@[4](Giving a tuple a name)
+@[5](Using that name)
+@[6](Ignoring a value when deconstructing a tuple)
+@[5-9](Passing a tuple into a function)
+
 +++
 
-## Tupples
+## Tuples II
 
 ```Fsharp
-let myTupple = ("apples", 5)
-let (fruit, count) = myTupple
+let myTuple = ("apples", 5)
+let (fruit, count) = myTuple
 
 type FruitOrder = string * float * int
 let calculateTotal order : FruitOrder =
@@ -52,11 +61,11 @@ let calculateTotal order : FruitOrder =
 let cost = calculateTotal ("apples", .35, 2)
 ```
 
-@[1](Constructing a tupple)
-@[2](Deconstructing the tupple)
-@[4](Giving a tupple a name)
+@[1](Constructing a tuple)
+@[2](Deconstructing the tuple)
+@[4](Giving a tuple a name)
 @[5](Using that name)
-@[6](Ignoring a value when deconstructing a tupple)
+@[6](Ignoring a value when deconstructing a tuple)
 @[5-9](Passing a tuple into a function)
 
 +++
