@@ -45,52 +45,23 @@
 @[6](Ignoring a value when deconstructing a tuple)
 @[5-9](Passing a tuple into a function)
 
-+++
-
-## Tuples II
-
-```Fsharp
-let myTuple = ("apples", 5)
-let (fruit, count) = myTuple
-
-type FruitOrder = string * float * int
-let calculateTotal order : FruitOrder =
-  let (_, cost, count) = order
-  cost * count
-
-let cost = calculateTotal ("apples", .35, 2)
-```
-
-@[1](Constructing a tuple)
-@[2](Deconstructing the tuple)
-@[4](Giving a tuple a name)
-@[5](Using that name)
-@[6](Ignoring a value when deconstructing a tuple)
-@[5-9](Passing a tuple into a function)
-
-+++
-
-## Records
-
-```FSharp
-type FruitOrder = { fruit: string; price: float; count: int}
-
-type FruitOrder = {
-  fruit: string
-  price: float
-  count: int
-}
-
-let myOrder = { fruit = "apples"; price = 0.35; count = 2 }
-let calculateTotal order =
-  let (cost = myCost; count = myCount) = order
-  myCost * myCount
-```
++++?code=src/Records/Creation.fs&lang-FSharp&title=Records
 
 @[1](Defining a record in one line)
-@[3-7](Defining a record on multiple lines (no more semicolons))
-@[9](Constructing a record)
-@[10-12](Passing a record into a function and deconstructing it)
+@[2](Constructing a record)
+@[4-8](Defining a record on multiple lines (no more semicolons))
+@[10-14](Passing a record into a function and deconstructing it)
+
++++?code=src/Records/With.fs&lang-FSharp&title=Records
+
++++?code=src/Records/StructuralEquality.fs&lang-FSharp&title=Records
+
+@[1-4]
+@[6-7](Equals operator)
+@[8-9](Object.Equals)
+@[10-11](Object.ReferenceEquals)
+
++++?code=src/Records/Person.cs&lang-CSharp&title="Equivelent Code in C#"
 
 ---
 
