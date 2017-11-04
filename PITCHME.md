@@ -36,7 +36,7 @@
 * Units
 * Classes
 
-+++?code=src/Tuples.fs&lang=FSharp
++++?code=src/Tuples.fs&lang=FSharp&title=Tuples
 
 @[1](Constructing a tuple)
 @[2](Deconstructing the tuple)
