@@ -37,5 +37,5 @@
 @[5](If x is only divisible by 5, then only the second value is zero, and we don't care about the first)
 @[7](If we've gotten this far, then x is not divisible by 3 or 5, just return it as a string)
 @[8](Create a list from 1 to max)
-@[9](Loop over that list, passing each value to the getFizzBuzz function.  This is like a `list.Select(x => getFizzBuzz(x)`)
+@[9](Loop over that list, passing each value to the getFizzBuzz function. This is like `list.Select(x => getFizzBuzz(x))`)
 @[10](Loop over the results from getFizzBuzz and print them out)
