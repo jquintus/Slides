@@ -61,16 +61,16 @@
 @[4-8](Defining a record on multiple lines (no more semicolons))
 @[10-14](Passing a record into a function and deconstructing it)
 
-+++?code=src/Records/With.fs&lang-FSharp&title=Records
++++?code=src/Records/With.fs&lang-FSharp&title="New Records From Old Records"
 
-+++?code=src/Records/StructuralEquality.fs&lang-FSharp&title=Records
++++?code=src/Records/StructuralEquality.fs&lang-FSharp&title="Records and Equality"
 
 @[1-4]
 @[6-7](Equals operator)
 @[8-9](Object.Equals)
 @[10-11](Object.ReferenceEquals)
 
-+++?code=src/Records/ConflictingTypes.fs&lang-FSharp&title=Records
++++?code=src/Records/ConflictingTypes.fs&lang-FSharp&title="Records with Similar Fields"
 
 @[2-3](Different types with the same fields)
 @[5](Defaults to the most recent type defined)
@@ -83,10 +83,10 @@
 ## Records Summary
 
 * Defined with `{ }`
-* Use semicolons
+* Uses semicolons
 * Label order does not matter
 * Similar to classes with out methods
-  * You can add some if you really want
+  * (You can add some if you _really_ want)
 
 ---
 
