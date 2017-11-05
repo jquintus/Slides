@@ -44,4 +44,6 @@
 
 ---?include=md/UnitsOfMeasure.md
 
+---?include=md/TypeInference.md
+
 ---?include=md/Resources.md
