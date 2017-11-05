@@ -3,7 +3,7 @@
 * Pairs, tripples, etc of data
 * "Multiplicative" types
 
----?code=src/Tuples.fs&lang=FSharp&title=Tuples
++++?code=src/Tuples.fs&lang=FSharp&title=Tuples
 
 @[1](Constructing a tuple)
 @[2](Deconstructing the tuple)
