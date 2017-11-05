@@ -14,8 +14,8 @@
 
 @[1](Define a generic record for the example)
 @[3-7](('a -> bool) -> 'a -> Result<'a>)
-@[9-10](int -> Result<int>)
-@[1](string -> Result<string>)
+@[3-10](int -> Result<int>)
+@[3-12](string -> Result<string>)
 
 +++
 

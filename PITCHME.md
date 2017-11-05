@@ -1,16 +1,6 @@
-# F &#35;
+# F &#35; Type System
 
 ![logo](assets/logo.png)
-
----
-
-## Topics
-
-* What is F#
-* Syntax
-* Types
-* Currying
-* Awesome sauce
 
 ---
 
@@ -32,9 +22,9 @@
 * Tuples
 * Records
 * Discriminated Unions
-* Options
-* Units
-* Classes
+* Units of Measure
+
+---?include=md/TypeSignatures.md
 
 ---?include=md/Tuples.md
 
