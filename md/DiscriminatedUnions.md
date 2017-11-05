@@ -17,7 +17,7 @@
 
 @[1-6](Define some types)
 @[8-12](Simple pattern matching)
-@[14-23](Complex patterns)
+@[14-23](Complex patterns and the `function` keyword)
 
 +++
 
@@ -39,3 +39,13 @@
 @[8](Create a list from 1 to max)
 @[9](Loop over that list, passing each value to the getFizzBuzz function. This is like `list.Select(x => getFizzBuzz(x))`)
 @[10](Loop over the results from getFizzBuzz and print them out)
+
+### Option Type
+
+* `null` is very rare in F#
+  * Interacting with the Framework
+  * Using `option` incorrectly (this is easy to avoid)
+* Two possible values `Some T` or `None`
+* Use pattern matching instead of null checks
+
++++?code=src/DiscriminatedUnions/Option.fs&lang=FSharp&title=Option
