@@ -24,5 +24,8 @@
 ### Pattern Matching
 
 * Can be used with all types
-* Can be used to check if something is a subtype (`:? int`)
-* Must be exhaustive (`_` can be used to catch all remaining cases)
+* Can be used to check if something is a subtype (e.g., `:? int`)
+* Must be exhaustive, the compiler will tell you if you've missed something
+* The underscore (`_`) can be used to catch all remaining cases, but this is typically not a good idea
+
++++code=src/DiscriminatedUnions/FizzBuzz.fs&lang=FSharp&title="Fizz Buzz with Pattern Matching"
