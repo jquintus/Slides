@@ -34,5 +34,5 @@
 * Defined with `{ }`
 * Uses semicolons
 * Label order does not matter
-* Similar to classes with out methods
+* Similar to classes without methods
   * (You can add some if you _really_ want)
