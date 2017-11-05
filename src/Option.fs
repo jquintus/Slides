@@ -1,22 +1,16 @@
-let split (subString: string) (input: string) =
-    let idx = input.IndexOf(subString)
-    if (idx > 0) then 
-        let prefix = input.Substring(0, idx)
-        let suffix = input.Substring(idx + 1) 
-        Some  (prefix , subString, suffix)
-    else
-        None
+let someInt = Some 23
+let noneInt = None
 
-let getPrefix = function 
-    | Some (pre, _, _) -> pre
-    | None             -> ""
+let printOption = function
+    | Some x -> printfn "%A" x
+    | None   -> printfn "Nothing"
 
-let splitOnSpace = split " "
+printOption someInt
+printOption noneInt
+Some "Hello world" |> printOption
 
-let failure = getPrefix (splitOnSpace "Hello")
-let  success = 
-    "Hello world" 
-    |> splitOnSpace
-    |> getPrefix
+noneInt.Value * 2 |> printfn "%i"
 
-let dynamite = ("boom" |> splitOnSpace).Value
+noneInt 
+|> Option.map (fun x -> x * 2)
+|> printfn "%A"

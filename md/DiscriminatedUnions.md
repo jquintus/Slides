@@ -49,3 +49,9 @@
 * Use pattern matching instead of null checks
 
 +++?code=src/DiscriminatedUnions/Option.fs&lang=FSharp&title=Option
+
+@[1-2](Creating an option)
+@[4-6](Pattern matching an option)
+@[8-10](Options are generic)
+@[12](Don't use `option.Value` it's the only way to get a `NullReferenceException` in F#)
+@[14-16](`option.Map`: A safe alternative to using `option.Value`)
