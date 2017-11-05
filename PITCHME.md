@@ -40,6 +40,6 @@
 
 ---?include=md/Records.md
 
----?include=md/DiscriminatedUnions
+---?include=md/DiscriminatedUnions.md
 
 ---?include=md/Resources.md
