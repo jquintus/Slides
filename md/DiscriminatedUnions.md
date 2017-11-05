@@ -47,7 +47,7 @@
 * `null` is very rare in F#
   * Interacting with the Framework
   * Using `option` incorrectly (this is easy to avoid)
-* Option is a generic discriminated union with two  possible values of `Some T` or `None`
+* Option is a generic discriminated union with two possible values of `Some T` or `None`
 * Use pattern matching instead of null checks
 
 +++?code=src/DiscriminatedUnions/Option.fs&lang=FSharp&title=Option
