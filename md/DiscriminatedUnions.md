@@ -28,7 +28,7 @@
 * Must be exhaustive, the compiler will tell you if you've missed something
 * The underscore (`_`) can be used to catch all remaining cases, but this is typically not a good idea
 
-+++code=src/DiscriminatedUnions/FizzBuzz.fs&lang=FSharp&title="Fizz Buzz with Pattern Matching"
++++?code=src/DiscriminatedUnions/FizzBuzz.fs&lang=FSharp&title="Fizz Buzz with Pattern Matching"
 
 @[1](Define a function to perform FizzBuzz for a list of values)
 @[2-7](Define an inner function to calculate FizzBuzz for a single value)
