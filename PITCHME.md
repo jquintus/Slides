@@ -42,4 +42,6 @@
 
 ---?include=md/DiscriminatedUnions.md
 
+---?include=md/UnitsOfMeasure.md
+
 ---?include=md/Resources.md
