@@ -17,7 +17,7 @@
 
 @[1-6](Define some types)
 @[8-12](Simple pattern matching)
-@[14-21](More complex)
+@[14-23](Complex patterns)
 
 +++
 
