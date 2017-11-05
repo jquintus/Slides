@@ -40,6 +40,8 @@
 @[9](Loop over that list, passing each value to the getFizzBuzz function. This is like `list.Select(x => getFizzBuzz(x))`)
 @[10](Loop over the results from getFizzBuzz and print them out)
 
++++
+
 ### Option Type
 
 * `null` is very rare in F#
