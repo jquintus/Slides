@@ -16,4 +16,4 @@ let mphToMilesPerSecond h = h / 60.0<minute/hour> / 60.0<second/minute>
 let desiredSpeed = 88.0<mile/hour> 
                    |> mphToMilesPerSecond 
                    |> milesToKm
-// val desiredSpeed' : float<km/second> = 0.01518906889
+// val desiredSpeed : float<km/second> = 0.01518906889
