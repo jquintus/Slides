@@ -85,4 +85,5 @@ let add1 t d=
 ```
 
 `int * int -> int`
+
 `int * int * int -> int -> int * int * int`
