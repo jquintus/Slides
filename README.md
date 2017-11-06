@@ -1,4 +1,4 @@
-[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/FSharp)
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/FSharpTypes)
 
 Background on what Cake is and how to use it.
 
