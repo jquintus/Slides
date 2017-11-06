@@ -69,3 +69,20 @@ let printDouble x =
 ```
 
 `int -> unit`
+
++++
+
+### Tuples
+
+```FSharp
+let add t =
+    let (x, y) = t
+    x + y
+
+let add1 t d=
+    let (x, y, z) = t
+    (x + d, y + d, z + d)
+```
+
+`int * int -> int`
+`int * int * int -> int -> int * int * int`
