@@ -40,7 +40,7 @@ let sum = add 8 80
 
 ```FSharp
 let add8 y = add 8 y
-let add8' = add 8
+let add8'  = add 8
 
 let sum = add8 80
 ```
@@ -81,11 +81,11 @@ let add t =
     let (x, y) = t
     x + y
 
-let add1 t d=
-    let (x, y, z) = t
-    (x + d, y + d, z + d)
+let add1 t d =
+    let (x, y) = t
+    (x + d, y + "world", y.Length)
 ```
 
 `int * int -> int`
 
-`int * int * int -> int -> int * int * int`
+`int * string -> int -> int * string * int`
