@@ -1,8 +1,8 @@
 type Person = { firstName: string; lastName: string}
-
+ 
 let marty = { firstName = "Marty"; lastName = "McFly" }
 let marty' = { firstName = "Marty"; lastName = "McFly" } 
-
+ 
 let equals = marty = marty'
 // val equals : bool = true
 let systemEquals = System.Object.Equals(marty, marty')
