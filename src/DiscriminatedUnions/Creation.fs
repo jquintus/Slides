@@ -1,4 +1,4 @@
-type Shape = Circle of int | Rectangle of int * int | Square of int
+type Shape =Circle of int | Rectangle of int * int | Square of int
 let aCircle = Circle 3
 let aRectangle = Rectangle (2, 3)
 
