@@ -1,7 +1,7 @@
 ## Tuples
 
 * Pairs, tripples, etc of data
-* "Multiplicative" types
+* _Multiplicative_ types
 
 +++?code=src/Tuples.fs&lang=FSharp&title=Tuples
 
