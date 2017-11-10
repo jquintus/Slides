@@ -1,4 +1,4 @@
-type Person = { firstName: string; lastName: string}
+type Person = { firstName: string; lastName: string }
 let mcFly = { firstName = "Marty"; lastName = "McFly" }
 
 type FruitOrderRecord = {
