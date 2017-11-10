@@ -8,8 +8,8 @@ type Option<'a> =
  
 type Person = { name: string; age: int}
 type KitchenSink =
-    | Person of Person
+    | KewlDude of Person
     | Order of string * int
     | EmptyCase
     | Things of int list 
-let sinkPerson = Person { name= "Marty McFly"; age = 17 }
+let sinkPerson = KewlDude { name= "Marty McFly"; age = 17 }
