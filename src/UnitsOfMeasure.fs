@@ -11,9 +11,9 @@ let marathon' = halfMarathon + halfMarathon
 // val marathon' : float<mile> = 26.2188
 
 let milesToKm m = m * 0.621371<km/mile>
-let mphToMilesPerSecond h = h / 60.0<minute/hour> / 60.0<second/minute> 
+let mphToMps h = h / 60.0<minute/hour> / 60.0<second/minute> 
 
 let desiredSpeed = 88.0<mile/hour> 
-                   |> mphToMilesPerSecond 
+                   |> mphToMps 
                    |> milesToKm
 // val desiredSpeed : float<km/second> = 0.01518906889
