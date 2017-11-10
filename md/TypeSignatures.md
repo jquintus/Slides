@@ -17,7 +17,7 @@ let intToString (x:int) = x.ToString()
 ### Generic Function
 
 ```FSharp
-let intToString x = x.ToString()
+let toString x = x.ToString()
 ```
 
 `'a -> string`
