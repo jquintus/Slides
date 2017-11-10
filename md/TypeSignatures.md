@@ -81,11 +81,11 @@ let add t =
     let (x, y) = t
     x + y
 
-let add1 t d =
+let add1 t =
     let (x, y) = t
-    (x + d, y + "world", y.Length)
+    (x, y + "world", y.Length)
 ```
 
 `int * int -> int`
 
-`int * string -> int -> int * string * int`
+`'a * string -> 'a * string * int`
