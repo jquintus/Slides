@@ -2,7 +2,7 @@
 
 * Tuples with names
 * Classes without behavior
-* "Multiplicative" types
+* _Multiplicative_ types
 
 +++?code=src/Records/Creation.fs&lang-FSharp&title=Records
 

@@ -3,7 +3,7 @@
 * Nothing really like it in C#
   * Kinda like enums with data
   * Kinda like abstract classes (but better)
-* "Additive" types
+* _Additive_ types
 * Requires pattern matching
 
 +++?code=src/DiscriminatedUnions/Creation.fs&lang=FSharp&title="Discriminated Unions"
