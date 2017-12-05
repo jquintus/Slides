@@ -1,11 +1,13 @@
-# Page 1
+# Art 101
 
-This is my first slide
-
+Drawing meaningful diagrams
 
 ---
 
-# Slides with pictures even
+# Diagram Types
 
-![Polar Bear](https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg)
+* Class Diagrams
+* Sequence Diagrams
+* Branch Diagrams
 
+There are plenty others, but this is enough to get you going
