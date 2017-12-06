@@ -9,5 +9,3 @@ Drawing meaningful diagrams
 * Class Diagrams
 * Sequence Diagrams
 * Branch Diagrams
-
-There are plenty others, but this is enough to get you going
