@@ -1,8 +1,8 @@
 [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/FSharpTypes)
 
-Background on what Cake is and how to use it.
+An overview of the F# type system for beginners 
 
-View the [`raw` **PITCHME.md**](https://raw.githubusercontent.com/jquintus/Slides/PITCHME.md) markdown to see how each slide in the presentation has been implemented.
+View the [`raw` **PITCHME.md**](https://raw.githubusercontent.com/jquintus/Slides/FSharpTypes/PITCHME.md) markdown to see how each slide in the presentation has been implemented.
 
 ## Writing locally
 
