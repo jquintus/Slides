@@ -1,7 +1,5 @@
-This is a simple test of GitPitch.
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/Diagrams)
 
-To view this slideshow, go to https://gitpitch.com/jquintus/Test
+A summary of basic diagrams that are useful in software engineering
 
-* [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/Env) Env
-* [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/Cake?grs=github&t=white) Cake
-* [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/jquintus/Slides/FSharpTypes) F# Types
+View the [`raw` **PITCHME.md**](https://raw.githubusercontent.com/jquintus/Slides/Diagrams/PITCHME.md) markdown to see how each slide in the presentation has been implemented.
