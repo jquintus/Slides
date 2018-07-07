@@ -1,39 +1,33 @@
-# F &#35; Type System
+# Vim
 
 ![logo](assets/logo.png)
 
 ---
 
-## What is F &#35;
+## A quick history
 
-* Functional First
-  * Immutable
-  * Functions as a first class citizen
-  * No nulls
-* .Net
-  * Can call into C#/VB
-  * Can be called from C#/VB
-  * Has access to the .Net Framework
+* ed
+  * `g/re/p`
+  * `w`, `q`
+* ex
+  * `:`
+* vi
+* vi for the amiga -> vim
 
 ---
 
-## Types
+## Modes
 
-* Tuples
-* Records
-* Discriminated Unions
-* Units of Measure
+* Normal
+* Insert
+* Visual
+* Command Line
 
----?include=md/TypeSignatures.md
+---
 
----?include=md/Tuples.md
+## Normal
 
----?include=md/Records.md
-
----?include=md/DiscriminatedUnions.md
-
----?include=md/UnitsOfMeasure.md
-
----?include=md/TypeInference.md
-
----?include=md/Resources.md
+* The mode vim starts in
+* Bang on `esc` to get back to it
+* Move around
+* Issue commands
