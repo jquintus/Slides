@@ -1,0 +1,3 @@
+
+" Clean up json
+nmap <F12> :1,$ ! TidyJson -<cr>:set syntax=json<cr>
