@@ -1,0 +1,21 @@
+"**********************************************************
+" Installation:  The easy way
+"**********************************************************
+" 1) doubl click on vimrc.install.bat
+"**********************************************************
+" Installation:  The hard (manual) way
+"**********************************************************
+" 1) Copy this to your home directory
+" 2) Make a directory in your home directory called "backup"
+" 3) Visual Studio Integration http://vim.wikia.com/wiki/Integrate_gvim_with_Visual_Studio
+" Title: &Vim
+" Command: C:\Vim\vim73\gvim.exe
+" Arguments: --servername VimStudio --remote-silent +"call cursor($(CurLine),$(CurCol))" "$(ItemFileName)$(ItemExt)"
+" InitialDirectory: $(ItemDir)
+" 4) Uncomment the correct section below depending on installation
+
+"Windows 8
+source C:\Users\josh.DOTALIGN\OneDrive\bin\config\vimfiles\vimrc.txt
+nmap <F3> :source C:\Users\josh.DOTALIGN\OneDrive\bin\config\vimfiles\vimrc.txt<cr>
+nmap <s-F3> :e C:\Users\josh.DOTALIGN\OneDrive\bin\config\vimfiles\vimrc.txt<cr>
+

@@ -1,0 +1,16 @@
+echo "Reloading vimrc"
+
+source $VIMRUNTIME/vimrc_example.vim
+
+set backup                   " keep backup copies
+set backupdir=~/.vim_backup  " save all backups in one directory (if you get "E303: Unable to open swap file for Â[No Name]Â, recovery impossible" then just make the directory ~/backup
+set directory=~/.vim_backup  " put swaps files here too
+set undodir=~/.vim_undo      " put swaps files here too
+
+" Reload the configs
+nmap <F3> :source ~\_vimrc<cr>
+nmap <s-F3> :e ~\_vimrc<cr>
+
+" CTRL-C and CTRL-Insert are Copy
+vnoremap <C-C> "+y
+vnoremap <C-Insert> "+y
