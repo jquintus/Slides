@@ -75,7 +75,7 @@ Seriously, this is a good thing
 * Used to select things
 * Charater, line, or block based
   * `v`, `V`, `<c-v>`
-* Exit by 
+* Exit by
   * Issuing a normal mode command (copy/delete/etc)
   * Pressing `esc`
 
@@ -107,31 +107,26 @@ Seriously, this is a good thing
 
 ##  Vim Philosophy:  Commands
 
-The same key issues the same command, but in different ways.
+Modifying the key modifies the command
 
-```txt
-i -> Insert before the cursor
-I -> Insert before the first character on the line
-
-a -> Insert after the cursor
-A -> Insert after the last character on the line
-```
+ Command | Action
+----|----
+`i`| Insert before the cursor
+`I`| Insert before the first character on the line
+`a`| Insert after the cursor
+`A`| Insert after the last character on the line
 
 ---
 
 ##  Vim Philosophy:  Commands
 
-The same key issues the same command, but in different ways.
-
-```txt
-cc        -> Cut the entire line and enter insert mode
-C         -> Cut the rest of the line and enter insert mode
-c{motion} -> Cut the text described by {modtion} 
-             and enter insert mode
-
-yy        -> Yank (copy) the entire line
-y{motion} -> Yank (copy) the text described by {modtion} 
-```
+ Command | Action
+----|----
+`cc`        | Cut the entire line
+`C`         | Cut the rest of the line
+`c{motion}` | Cut the text described by `{motion}`
+`yy`        | Yank (copy) the entire line
+`y{motion}` | Yank the text described by `{motion}`
 
 ---
 
@@ -141,7 +136,6 @@ y{motion} -> Yank (copy) the text described by {modtion}
 1. Format a document using an external tool
 1. Create and use mappings to make tedious work simpler
 1. Moving around (searching through logs)
-1. Doing the same thing across multiple files
 1. Redoing work (implement a large interface quickly)
 
 ---
@@ -151,3 +145,4 @@ y{motion} -> Yank (copy) the text described by {modtion}
 * [vim.org](http://vim.org)
 * [Tim Pope](https://github.com/tpope)
 * [Cheat Sheet](http://bfy.tw/J6VM)
+* [My vimrc](https://1drv.ms/u/s!AiZXpgx5HarchIoid0yENaWRbXzMkg)
